@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chandan Kumar | Professional Resume</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ffffff;
+            color: #333333;
+            line-height: 1.6;
+            font-size: 11pt;
+        }
+        
+        @page { 
+            size: A4; 
+            margin: 0; 
+        }
+        
+        .page-container {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 0 auto;
+            padding: 5mm 20mm 20mm 20mm; 
+            background: white;
+            position: relative;
+            /* MOVED HERE: These now apply to both Screen AND Print */
+            border: 1px solid #003366; 
+            outline: 4px solid #003366;
+            outline-offset: -25px;
+        }
+        
+        header { 
+            background-color: #003366; 
+            padding: 20px; 
+            margin-bottom: 10px; 
+            text-align: center;
+        }
+        h1 { color: #ffffff; font-size: 24pt; margin-bottom: 5px; text-transform: uppercase; letter-spacing: 1px; }
+        .subtitle1, .subtitle2 { font-size: 12pt; font-weight: bold; color: #ffffff; }
+
+        .personal-info-container { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px; }
+        .personal-text { flex: 1; }
+     
+        .profile-img {
+            width: 115px;
+            height: 135px;
+            object-fit: cover;
+            border: 2px solid #003366; 
+            padding: 5px;
+            background-color: #fff;
+            margin-left: 30px;
+        }
+
+        section { margin-bottom: 10px; }
+        
+        h2 { 
+            font-size: 14pt; 
+            padding: 5px 10px; 
+            margin-bottom: 10px; 
+            text-transform: uppercase; 
+            color: #333; 
+        }
+
+        .head-personal { background-color: #f69697; }
+        .head-academic { background-color: #79baec; }
+        .head-objective { background-color: #ffa07a; }
+        .head-skills { background-color: #90ee99; }
+
+        .objective { text-align: justify; }
+        .education-item { margin-bottom: 15px; }
+        .education-header { display: flex; justify-content: space-between; font-weight: bold; margin-bottom: 3px; }
+        .education-details { font-weight: bold; color: #555; margin-bottom: 3px; }
+        ul { list-style-type: none; }
+        .skills-list li, .personal-list li { margin-bottom: 6px; display: flex; }
+        .list-label { font-weight: bold; width: 150px; flex-shrink: 0; }
+        .list-value { flex-grow: 1; }
+
+        @media screen {
+            body { 
+                background-image: linear-gradient(135deg, #f5f7fa 0%, #d4e0eb 100%);
+                padding: 40px 20px; 
+            }
+            .page-container { 
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+                margin: 20px auto; 
+                zoom: 0.8;
+            }
+        }   
+
+        @media print {
+            body {
+                background-image: none;
+                background-color: #ffffff;
+            }
+            .page-container {
+                width: 210mm;
+                height: 297mm; 
+                margin: 0;
+                padding: 8mm 15mm 15mm 15mm; 
+                box-shadow: 5px;
+                /* Ensure colors and outlines print */
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+            html, body {
+                height: 100%;
+                overflow: hidden;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page-container">
+    <header>
+        <h1>CHANDAN KUMAR</h1>
+        <div class="subtitle1">| Aspiring Deck Cadet |</div>
+        <div class="subtitle2">Arwal ( Bihar )</div>
+    </header>
+
+    <section>
+        <h2 class="head-personal">Personal Details</h2>
+        <div class="personal-info-container">
+            <div class="personal-text">
+                <ul class="personal-list">
+                    <li><span class="list-label">Name :</span> <span class="list-value"><strong>Chandan Kumar</strong></span></li>
+                    <li><span class="list-label">Father's Name :</span> <span class="list-value"><strong>Vinod Kumar</strong></span></li>
+                    <li><span class="list-label">Mother's Name :</span> <span class="list-value"><strong>Sangita Devi</strong></span></li>
+                    <li><span class="list-label">Date of Birth :</span> <span class="list-value"><strong>April 12, 2006</strong></span></li>
+                    <li><span class="list-label">Contact No. :</span> <span class="list-value"><strong>+91 8541027456</strong></span></li>
+                    <li><span class="list-label">Email ID :</span> <span class="list-value"><strong>ckpal693806@gmail.com</strong></span></li>
+                    <li><span class="list-label">Address :</span> <span class="list-value"><strong>SH 69, Village - Niranjan Bigha, P.O. + P.S. - Kurtha, District - Arwal (BIHAR) - 804421</strong></span></li>
+                </ul>
+            </div>
+            <img src="https://raw.githubusercontent.com/pal693806-ux/Komal-resume/main/photo.jpeg?raw=true" alt="Profile Photo" class="profile-img">
+        </div>
+    </section>
+
+    <section>
+        <h2 class="head-academic">Academic Background</h2>
+        <div class="education-item">
+        <div class="education-item">
+            <div class="education-header"><span>Senior Secondary Education (Class 12)</span><span>2025*</span></div>
+            <div class="education-details">Gaya College, Gaya | BSEB | Aggregate: 77.20%</div>
+        </div>
+        <div class="education-item">
+            <div class="education-header"><span>Secondary Education (Class 10)</span><span>2022</span></div>
+            <div class="education-details">Public Central Sidharth High School, Jankapur, Gaya | BSEB | Aggregate: 90.00%</div>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="head-objective">Professional Objective</h2>
+        <p class="objective"><strong>Dedicated and disciplined student and wants to secure a Diploma in Nautical Science (DNS) sponsorship. Combines a strong foundation in mathematics and sciences with a deep interest in maritime commerce and Indian and International geography. Eager to bring technical aptitude and a strong work ethic to the dynamic maritime environment.</strong></p>
+    </section>
+
+    <section>
+        <h2 class="head-skills">Core Competencies</h2>
+        <ul class="skills-list">
+            <li><span class="list-label">Technical Knowledge :</span>  <span class="list-value"><strong>Applied Physics and Mathematics</strong></span></li>
+            <li><span class="list-label">Languages Known :</span>  <span class="list-value"><strong>Fluent Spoken English and Hindi, Strong Grammar & Vocabulary.</strong></span></li>
+            <li><span class="list-label">Soft Skills :</span>  <span class="list-value"><strong>Disciplined & Structured Exam Preparation, Analytical Problem Solving.</strong></span></li>
+        </ul>
+    </section>
+</div>
+</body>
+</html>
